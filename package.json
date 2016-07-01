@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/lliccien/timbragram#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "materialize-css": "^0.97.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",    
+    "gulp-sass": "^2.3.2"
   }
 }
