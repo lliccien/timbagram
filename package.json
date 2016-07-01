@@ -1,0 +1,25 @@
+{
+  "name": "timbragram",
+  "version": "0.1.0",
+  "description": "Comparte fotos con tus amigos casineros",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lliccien/timbragram.git"
+  },
+  "keywords": [
+    "salsa",
+    "casisino",
+    "timba",
+    "fotos"
+  ],
+  "author": "Ludwring Liccien <ludwring.liccien@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lliccien/timbragram/issues"
+  },
+  "homepage": "https://github.com/lliccien/timbragram#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
