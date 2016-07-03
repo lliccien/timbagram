@@ -21,11 +21,12 @@
   "homepage": "https://github.com/lliccien/timbragram#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "materialize-css": "^0.97.6"
+    "materialize-css": "^0.97.6",
+    "pug": "^2.0.0-beta3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",    
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2"
   }
 }
