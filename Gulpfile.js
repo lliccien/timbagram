@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var babel = require('babelify');
 var browserify = require('browserify');
-var sourc = require('vinyl-source-stream');
+var source = require('vinyl-source-stream');
 
 gulp.task('styles', function () {
 	gulp
