@@ -20,10 +20,12 @@
   },
   "homepage": "https://github.com/lliccien/timbragram#readme",
   "dependencies": {
+    "empty-element": "^1.0.0",
     "express": "^4.14.0",
     "materialize-css": "^0.97.6",
     "page": "^1.7.1",
-    "pug": "^2.0.0-beta3"
+    "pug": "^2.0.0-beta3",
+    "yo-yo": "^1.2.2"
   },
   "devDependencies": {
     "babelify": "^7.3.0",
@@ -36,6 +38,6 @@
   },
   "scripts": {
     "build": "gulp",
-    "start": "gulp watch | node server.js" 
+    "start": "gulp watch | node server.js"
   }
 }

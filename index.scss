@@ -4,10 +4,10 @@ $secondary-color: #125688;
 
 @font-face {
     font-family: 'AndrogyneRegular';
-    src: url('../../public/fonts/androgyne_tb-webfont.woff2') format('woff2'),
-         url('../../public/fonts/androgyne_tb-webfont.woff') format('woff'),
-         url('../../public/fonts/androgyne_tb-webfont.ttf') format('truetype'),
-         url('../../public/fonts/androgyne_tb-webfont.svg#androgyneregular') format('svg');
+    src: url('../fonts/androgyne_tb-webfont.woff2') format('woff2'),
+         url('../fonts/androgyne_tb-webfont.woff') format('woff'),
+         url('../fonts/androgyne_tb-webfont.ttf') format('truetype'),
+         url('../fonts/androgyne_tb-webfont.svg#androgyneregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
