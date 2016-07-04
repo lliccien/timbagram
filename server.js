@@ -16,6 +16,16 @@ app.get('/', function (req, res) {
 	res.render('index')
 })
 
+app.get('/signup', function (req, res) {
+	// res.send('Hola Mundo!');
+	res.render('index')
+})
+
+app.get('/sifnin', function (req, res) {
+	// res.send('Hola Mundo!');
+	res.render('index')
+})
+
 // Poner al server web a escuchar en el puerto 3000
 app.listen(3000, function (err) {
 	if (err) return console.log('Hubo un error'), process.exit(1)
