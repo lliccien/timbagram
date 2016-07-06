@@ -13,17 +13,17 @@ app.use(express.static('public'));
 // Crear ruta / y responder a ella
 app.get('/', function (req, res) {
 	// res.send('Hola Mundo!');
-	res.render('index')
+	res.render('index', { title: 'TImbagram'})
 })
 
 app.get('/signup', function (req, res) {
 	// res.send('Hola Mundo!');
-	res.render('index')
+	res.render('index', { title: 'TImbagram - Signup'})
 })
 
-app.get('/sifnin', function (req, res) {
+app.get('/signin', function (req, res) {
 	// res.send('Hola Mundo!');
-	res.render('index')
+	res.render('index', { title: 'TImbagram - Signin'})
 })
 
 // Poner al server web a escuchar en el puerto 3000
