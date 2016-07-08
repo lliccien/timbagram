@@ -9,7 +9,7 @@ var landing = require('../landing');
 									<h2>Regitrate para ver fotos de tus Amig@s Casineros</h2>
 									<div class="section">
 										<a href="" class="btn btn-fb hide-on-small-only">Inicia sesión con Facebook</a>
-										<a href="" class="btn btn-fb hide-on-med-and-up">Inicia sesión</a>
+										<a href="" class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook-official" aria-hidden="true"></i>Inicia sesión</a>
 									</div>
 									<div class="divider"></div>
 									<div class="section">

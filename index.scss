@@ -23,6 +23,10 @@ body {
 	margin: 30px auto;
 }
 
+.landing {
+	margin: 30px auto;
+}
+
 .iphone {
 	max-width: 100%;
 }
@@ -41,11 +45,13 @@ body {
 	text-align: center;
 }
 
-.signup-box .timbagram {
+//.signup-box
+.timbagram {
 	/*font-family: 'Oleo Script', cursive;*/
 	font-family: 'AndrogyneRegular', cursive;
 	letter-spacing: 3px;
 	font-size: 42px;
+	color: $secondary-color !important;
 }
 
 .signup-form {
@@ -73,4 +79,15 @@ body {
 
 .btn.btn-idioma {
 	/*background-color: #125688;	*/
+}
+
+.header{
+	background-color: white;
+	box-shadow: none;
+	border-bottom: 1px soild #edeeee;
+	color: $secondary-color;
+}
+
+.timeline {
+	padding: 30px 0;
 }
