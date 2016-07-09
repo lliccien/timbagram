@@ -8,6 +8,7 @@ module.exports = function layout(content) {
 							<div class="conteiner">
 								<div class="row">
 									<div class="col s12 m6 offset-m1">
+										<img class="logo" src="images/favicon-96x96.png" />
 										<a href="/" class="brand-logo timbagram">Timbagram</a>
 									</div>
 									<div class="col s2 m6 push-s10 push-m10">
