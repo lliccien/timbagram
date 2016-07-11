@@ -8,8 +8,10 @@ module.exports = function layout(content) {
 							<div class="conteiner">
 								<div class="row">
 									<div class="col s12 m6 offset-m1">
-										<img class="logo" src="images/favicon-96x96.png" />
-										<a href="/" class="brand-logo timbagram">Timbagram</a>
+										<a href="/" class="brand-logo timbagram">
+											<img class="logo" src="images/favicon-96x96.png" />
+											<span>Timbagram</span>
+										</a>
 									</div>
 									<div class="col s2 m6 push-s10 push-m10">
 										<a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">

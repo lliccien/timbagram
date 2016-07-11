@@ -45,12 +45,7 @@ body {
 	text-align: center;
 }
 
-.logo {
-	width: 48px;
-	height: 48px;
-	border-radius: 15%;
-	margin-top: 3px;
-}
+
 
 //.signup-box
 .timbagram {
@@ -61,6 +56,18 @@ body {
 	font-size: 42px;
 	color: $secondary-color !important;
 	top: 3px;
+}
+
+.logo {
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin-top: 3px;
+}
+
+.timbagram span {
+	position: absolute;
+    margin: 5px 0 0 5px;
 }
 
 .signup-form {
@@ -134,4 +141,19 @@ $avartar-size: 48px;
 
 .card .fa-heart-o {
 	color: $secondary-color;
+}
+
+.fa-heart {
+	color: $secondary-color;
+	display: none;	
+}
+
+.card.liked {
+	.fa-heart {
+		display: block;
+	}
+
+	.fa-heart-o {
+		display: none;
+	}
 }

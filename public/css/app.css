@@ -6235,12 +6235,6 @@ body {
   padding: 10px 0;
   text-align: center; }
 
-.logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 15%;
-  margin-top: 3px; }
-
 .timbagram {
   /*font-family: 'Oleo Script', cursive;*/
   font-family: 'AndrogyneRegular', cursive;
@@ -6249,6 +6243,16 @@ body {
   font-size: 42px;
   color: #125688 !important;
   top: 3px; }
+
+.logo {
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-top: 3px; }
+
+.timbagram span {
+  position: absolute;
+  margin: 5px 0 0 5px; }
 
 .signup-form {
   width: 65%;
@@ -6306,3 +6310,13 @@ body {
 
 .card .fa-heart-o {
   color: #125688; }
+
+.fa-heart {
+  color: #125688;
+  display: none; }
+
+.card.liked .fa-heart {
+  display: block; }
+
+.card.liked .fa-heart-o {
+  display: none; }

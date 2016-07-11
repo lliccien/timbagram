@@ -24,7 +24,7 @@ page('/', function(ctx, next) {
 		},
 		imageUrl: 'images/office.jpg',
 		likes: 1024,
-		liked: true
+		liked: false
 
 	},
 	{
