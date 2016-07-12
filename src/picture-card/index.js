@@ -1,6 +1,19 @@
 var yo = require('yo-yo');
-var moment = require('moment');
 
+// Soporte para safari
+if (!window.Intl) {
+	window.Intl = require('intl');
+	require('intl/locale-data/jsonp/en-US.js');
+	require('intl/locale-data/jsonp/es.js');
+
+}
+
+var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
+
+require('intl-relativeformat/dist/locale-data/en.js');
+require('intl-relativeformat/dist/locale-data/es.js');
+
+var rf = new IntlRelativeFormat('es');
 
 module.exports = function pictueCard(pic) {
 	
@@ -17,7 +30,7 @@ module.exports = function pictueCard(pic) {
 						<img src="${picture.user.avatar}" class="avatar" />
 						<span class="username">${picture.user.username}</span>
 					  </a>
-					  <small class="right time">${moment(picture.createAt).fromNow()}</small>
+					  <small class="right time">${rf.format(picture.createAt)}</small>
 					  <p>
 					  	<a class="left" href="#" onclick=${like.bind(null, true)}><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 					  	<a class="left" href="#" onclick=${like.bind(null, false)}><i class="fa fa-heart" aria-hidden="true"></i></a>
