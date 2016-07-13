@@ -13,8 +13,8 @@ page('/', function(ctx, next) {
 			avatar: 'https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/12046790_10153790001424155_2301715220594432632_n.jpg?oh=511ac0b4303aae266995720a06fc7283&oe=57F6EF38'
 		},
 		imageUrl: 'images/office.jpg',
-		likes: 1024,
-		liked: true,
+		likes: 0,
+		liked: false,
 		createAt: new Date()
 
 	},
@@ -24,7 +24,7 @@ page('/', function(ctx, next) {
 			avatar: 'https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/12046790_10153790001424155_2301715220594432632_n.jpg?oh=511ac0b4303aae266995720a06fc7283&oe=57F6EF38'
 		},
 		imageUrl: 'images/office.jpg',
-		likes: 1024,
+		likes: 1,
 		liked: false,
 		createAt: new Date().setDate(new Date().getDate() - 10)
 
@@ -35,7 +35,7 @@ page('/', function(ctx, next) {
 			avatar: 'https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/12046790_10153790001424155_2301715220594432632_n.jpg?oh=511ac0b4303aae266995720a06fc7283&oe=57F6EF38'
 		},
 		imageUrl: 'images/office.jpg',
-		likes: 1024,
+		likes: 31,
 		liked: true,
 		createAt: new Date().setDate(new Date().getDate() - 30)
 
