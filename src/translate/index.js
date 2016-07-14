@@ -19,14 +19,14 @@ var MESSAGES = {};
 MESSAGES['es'] = es;
 MESSAGES['en-US'] = en;
 
-var locale = 'es';
+var locale = localStorage.locale || 'es';
 
 module.exports = {
 	message: function (text, options) {
 				options = options || {};
 				var msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
 				return msg.format(options)
-			},
+	},
 	date: new IntlRelativeFormat('locale')
 
 }

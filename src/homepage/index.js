@@ -15,7 +15,7 @@ page('/', function(ctx, next) {
 		imageUrl: 'images/office.jpg',
 		likes: 0,
 		liked: false,
-		createAt: new Date()
+		createdAt: new Date()
 
 	},
 	{
@@ -26,7 +26,7 @@ page('/', function(ctx, next) {
 		imageUrl: 'images/office.jpg',
 		likes: 1,
 		liked: false,
-		createAt: new Date().setDate(new Date().getDate() - 10)
+		createdAt: new Date().setDate(new Date().getDate() - 10)
 
 	},
 	{
@@ -37,7 +37,7 @@ page('/', function(ctx, next) {
 		imageUrl: 'images/office.jpg',
 		likes: 31,
 		liked: true,
-		createAt: new Date().setDate(new Date().getDate() - 30)
+		createdAt: new Date().setDate(new Date().getDate() - 30)
 
 	},		
 	];
