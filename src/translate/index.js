@@ -1,9 +1,8 @@
 // Soporte para safari
 if (!window.Intl) {
-	window.Intl = require('intl');
-	require('intl/locale-data/jsonp/en-US.js');
-	require('intl/locale-data/jsonp/es.js');
-
+  window.Intl = require('intl');
+  require('intl/locale-data/jsonp/en-US.js');
+  require('intl/locale-data/jsonp/es.js');
 }
 
 var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
@@ -16,18 +15,16 @@ var es = require('./es.js');
 var en = require('./en-US.js');
 
 var MESSAGES = {};
-MESSAGES['es'] = es;
+MESSAGES.es = es;
 MESSAGES['en-US'] = en;
 
 var locale = 'es';
 
 module.exports = {
-	message: function (text, options) {
-				options = options || {};
-				var msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
-				return msg.format(options)
-			},
-	date: new IntlRelativeFormat('locale')
-
+  message: function (text, opts) {
+        opts = opts || {};
+        var msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
+        return msg.format(opts)
+      },
+  date: new IntlRelativeFormat(locale)
 }
-
