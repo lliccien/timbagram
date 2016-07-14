@@ -1,4 +1,5 @@
 var yo = require('yo-yo');
+var moment = require('moment');
 var translate = require('../translate/index.js');
 
 
@@ -17,7 +18,7 @@ module.exports = function pictueCard(pic) {
 						<img src="${picture.user.avatar}" class="avatar" />
 						<span class="username">${picture.user.username}</span>
 					  </a>
-					  <small class="right time">${translate.date.format(picture.createAt)}</small>
+					  <small class="right time">${translate.date.format(picture.createdAt)}</small>
 					  <p>
 					  	<a class="left" href="#" onclick=${like.bind(null, true)}><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 					  	<a class="left" href="#" onclick=${like.bind(null, false)}><i class="fa fa-heart" aria-hidden="true"></i></a>
