@@ -9,7 +9,7 @@ var translate = require('../translate');
 								<form class="signup-form">
 									<div class="section">
 										<a href="" class="btn btn-fb hide-on-small-only">${translate.message('signup.facebook')}</a>
-										<a href="" class="btn btn-fb hide-on-med-and-up">${translate.message('signup.text')}</a>
+										<a href="" class="btn btn-fb hide-on-med-and-up"><i class="fa fa-facebook-official" aria-hidden="true"></i>${translate.message('signup.text')}</a>
 									</div>
 									<div class="divider"></div>
 									<div class="section">

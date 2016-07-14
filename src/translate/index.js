@@ -27,7 +27,7 @@ module.exports = {
 				var msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
 				return msg.format(options)
 	},
-	date: new IntlRelativeFormat('locale')
+	date: new IntlRelativeFormat(locale)
 
 }
 
