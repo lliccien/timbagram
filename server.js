@@ -26,6 +26,49 @@ app.get('/signin', function (req, res) {
 	res.render('index', { title: 'TImbagram - Signin'})
 })
 
+app.get('/api/pictures', function (req, res) {
+	var pictures = [
+		{
+			user: {
+				username: 'lliccien',
+				avatar: 'https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/12046790_10153790001424155_2301715220594432632_n.jpg?oh=511ac0b4303aae266995720a06fc7283&oe=57F6EF38'
+			},
+			imageUrl: 'images/office.jpg',
+			likes: 0,
+			liked: false,
+			createdAt: new Date()
+
+		},
+		{
+			user: {
+				username: 'lliccien',
+				avatar: 'https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/12046790_10153790001424155_2301715220594432632_n.jpg?oh=511ac0b4303aae266995720a06fc7283&oe=57F6EF38'
+			},
+			imageUrl: 'images/office.jpg',
+			likes: 1,
+			liked: false,
+			createdAt: new Date().setDate(new Date().getDate() - 10)
+
+		},
+		{
+			user: {
+				username: 'lliccien',
+				avatar: 'https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/12046790_10153790001424155_2301715220594432632_n.jpg?oh=511ac0b4303aae266995720a06fc7283&oe=57F6EF38'
+			},
+			imageUrl: 'images/office.jpg',
+			likes: 31,
+			liked: true,
+			createdAt: new Date().setDate(new Date().getDate() - 30)
+
+		}
+	];
+
+	setTimeout(function () {
+		res.send(pictures);
+	}, 2000)
+
+})
+
 // Poner al server web a escuchar en el puerto 3000
 app.listen(3000, function (err) {
 	if (err) return console.log('Hubo un error'), process.exit(1)

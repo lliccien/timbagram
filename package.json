@@ -28,6 +28,7 @@
     "materialize-css": "^0.97.6",
     "page": "^1.7.1",
     "pug": "^2.0.0-beta3",
+    "superagent": "^2.1.0",
     "title": "^1.0.0",
     "yo-yo": "^1.2.2"
   },
