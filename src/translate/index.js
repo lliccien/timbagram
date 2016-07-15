@@ -26,11 +26,7 @@ module.exports = {
         var msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
         return msg.format(opts)
       },
-<<<<<<< HEAD
+
   date: new IntlRelativeFormat(locale)
 }
-=======
-  date: new IntlRelativeFormat(locale )
-}
-         
->>>>>>> freature
+
