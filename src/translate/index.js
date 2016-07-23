@@ -5,7 +5,8 @@ if (!window.Intl) {
   require('intl/locale-data/jsonp/es.js');
 }
 
-var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
+//var IntlRelativeFormat = require('intl-relativeformat');
+window.IntlRelativeFormat = require('intl-relativeformat');
 var IntlMessageFormat = require('intl-messageformat');
 
 require('intl-relativeformat/dist/locale-data/en.js');

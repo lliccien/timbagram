@@ -25,10 +25,9 @@ var el = yo`<nav class="header">
 				</div>
 			</nav>`;
 
-
 module.exports = function header (ctx, next) {
-	
-	var conteiner = document.getElementById('header-conteiner');
-	empty(conteiner).appendChild(el):
-	next();
+  var container = document.getElementById('header-container')
+  empty(container).appendChild(el);
+  next();
 }
+
