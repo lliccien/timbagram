@@ -36,7 +36,7 @@ app.get('/api/pictures', function (req, res) {
 			imageUrl: 'images/office.jpg',
 			likes: 0,
 			liked: false,
-			createdAt: new Date()
+			createdAt: new Date().getTime()
 
 		},
 		{
